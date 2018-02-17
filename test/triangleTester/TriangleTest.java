@@ -6,16 +6,11 @@ import triangleex.Triangles;
 
 public class TriangleTest {
     
-    Triangles t;
+    Triangles t = new Triangles();
     String equiliteral = "You got an Equiliteral Triangle";
     String isosceles = "You got an Isosceles Triangle";
     String scalene = "You got a Scalene Triangle";
     String none = "Not a valid triangle";
-    
-    @Before
-    public void setUp() {
-        t = new Triangles();
-    }
     
     @Test
     public void triangleTest() throws Exception{
