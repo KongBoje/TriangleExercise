@@ -7,28 +7,21 @@ import triangleex.Triangles;
 public class TriangleTest {
     
     Triangles t;
-    String Equiliteral;
-    String Isosceles;
-    String Scalene;
-    String none;
-    
-    public TriangleTest() {
-    }
+    String equiliteral = "You got an Equiliteral Triangle";
+    String isosceles = "You got an Isosceles Triangle";
+    String scalene = "You got a Scalene Triangle";
+    String none = "Not a valid triangle";
     
     @Before
     public void setUp() {
         t = new Triangles();
-        String Equiliteral = "You got an Equiliteral Triangle";
-        String Isosceles = "Isosceles triangle";
-        String Scalene = "Scalene triangle";
-        String none = "Not a valid triangle";
     }
     
     @Test
     public void triangleTest() throws Exception{
-        assertEquals(Equiliteral, t.triangleSides(9,9,9));
-        assertEquals(Isosceles, t.triangleSides(9,9,7));
-        assertEquals(Scalene, t.triangleSides(9,7,6));
+        assertEquals(equiliteral, t.triangleSides(9,9,9));
+        assertEquals(isosceles, t.triangleSides(9,9,7));
+        assertEquals(scalene, t.triangleSides(9,7,6));
         assertEquals(none, t.triangleSides(9,8,0));
     }
     

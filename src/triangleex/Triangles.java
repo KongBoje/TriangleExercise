@@ -19,13 +19,16 @@ public class Triangles {
         if (Triangle) {
             if (EqTri) {
                 System.out.println("You got an Equiliteral Triangle");
+                return "You got an Equiliteral Triangle";
             } else if (IsoTri) {
                 System.out.println("You got an Isosceles Triangle");
+                return "You got an Isosceles Triangle";
             } else {
                 System.out.println("You got a Scalene Triangle");
+                return "You got a Scalene Triangle";
             }
         }
-        System.out.println("------");
-        return null;
+        System.out.println("Not a valid triangle");
+        return "Not a valid triangle";
     }
 }
